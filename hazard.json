@@ -1,0 +1,51 @@
+{
+ "format": "avsim-studio/1",
+ "params": {
+  "cutT0": 5.0,
+  "cutDur": 2.4,
+  "cutV": 15.0,
+  "pedT0": 9.6,
+  "pedV": 1.45,
+  "busGo": 17.5,
+  "cutDs": -4.0,
+  "tgT": 0.9,
+  "mu": 0.8,
+  "cutGap": null,
+  "cutBrake": 0.0,
+  "pedGap": null,
+  "pedLook": 0,
+  "civil": false
+ },
+ "policy": {
+  "v0": 12.5,
+  "T": 1.6,
+  "a": 1.4,
+  "b": 2.0,
+  "s0": 2.5,
+  "cautionV": 7.5,
+  "cautionRange": 55.0,
+  "pedBuffer": 2.5,
+  "cutinLat": 2.15
+ },
+ "hazards": [
+  {
+   "type": "bike",
+   "x": -15.0,
+   "lane": "E2",
+   "d": -0.5,
+   "v": 4.0,
+   "swerve": 2.0,
+   "swDur": 2.0,
+   "t0": 0.0,
+   "trig": 15.0
+  }
+ ],
+ "space": {
+  "h0_x": [-25.0, 5.0],
+  "h0_swerve": [1.6, 2.2],
+  "h0_trig": [11.0, 20.0],
+  "h0_swDur": [2.0, 2.6]
+ },
+ "exposure": 0.02,
+ "why": "Xe đạp đang đi ở làn ngoài E2 (tốc độ 4 m/s ~ 14.4 km/h, d = -0.5m sát vạch phân làn) bất ngờ lạng gấp sang trái 1.6 - 2.2m vào thẳng làn E1 của xe ta để tránh chướng ngại vật ven đường khi xe ta còn cách 11 - 20m. Tình huống này xảy ra khoảng 2 lần trong 100 chuyến đi nội đô (exposure = 0.02, theo số liệu khảo sát xung đột xe đạp - xe cơ giới của FHWA/NHTSA). Gia tốc ngang của xe đạp đạt đỉnh 2.0 - 2.7 m/s² (hoàn toàn nằm trong giới hạn bám 3.0 m/s² của xe đạp). Planner của xe ta gặp va chạm vì IDM chỉ phanh êm 2.0 m/s² sau khi xe đạp đã vào làn, trong khi phanh khẩn cấp hết cỡ ở giới hạn ma sát lốp ngay khi thấy xe đạp lạng sang sẽ dừng kịp thời và tránh được va chạm."
+}
